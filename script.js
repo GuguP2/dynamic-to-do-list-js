@@ -11,15 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Enter a task!");
       return;
 
-      // Create <li> for the task
-    const listItem = document.createElement('li');
+  }
+ const listItem = document.createElement('li');
     listItem.textContent = taskText;
 
     // Create remove button
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
     removeBtn.className = 'remove-btn';
-
+// Create <li> for the task
     // Add removal behavior
     removeBtn.onclick = () => {
       taskList.removeChild(listItem);
@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Clear the input field
     taskInput.value = "";
-  }
-
   // Add button click event
   addButton.addEventListener('click', addTask);
 
