@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const taskText = taskInput.value.trim();
     if (taskText === "") {
       alert("Enter a task!");
-      
+    }
  const listItem = document.createElement('li');
     listItem.textContent = taskText;
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
     }
-}
+
 })
 
 
